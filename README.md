@@ -1,4 +1,4 @@
-#Boticord Python Library
+# Boticord Python Library
 
 Простой Python модуль для работы с Boticord API (не официальный).
 
