@@ -1,3 +1,5 @@
 /.idea/
 /venv/
 .git
+/boticordpy.egg-info
+/dist
