@@ -1,5 +1,6 @@
 /.idea/
 /venv/
 .git
+.DS_Store
 /boticordpy.egg-info
 /dist
