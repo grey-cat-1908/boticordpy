@@ -35,7 +35,7 @@ class BoticordClient:
             elif resp.status == 404:
                 raise exceptions.NotFound(resp, data)
             else:
-                return await resp.json()
+                return data
 
     async def getBotComments(self, botID : int):
         """Get Boticord Bot Comments"""
@@ -51,7 +51,7 @@ class BoticordClient:
             elif resp.status == 404:
                 raise exceptions.NotFound(resp, data)
             else:
-                return await resp.json()
+                return data
 
     async def getUserBots(self, userID : int):
         """Get Boticord User Bots"""
@@ -67,7 +67,7 @@ class BoticordClient:
             elif resp.status == 404:
                 raise exceptions.NotFound(resp, data)
             else:
-                return await resp.json()
+                return data
 
     async def postStats(self, stats):
         """Post Stats to Boticord"""
@@ -83,4 +83,4 @@ class BoticordClient:
             elif resp.status == 404:
                 raise exceptions.NotFound(resp, data)
             else:
-                return await resp.json()
+                return data
