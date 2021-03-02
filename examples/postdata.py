@@ -1,13 +1,13 @@
-import boticordpy
+from boticordpy import BoticordClient
 import discord
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix = "!")
-boticord = boticordpy.BoticordClient(bot, token="your-boticord-token")
+boticord = BoticordClient(bot, token="your-boticord-token")
 
 @bot.event
 async def on_connect():
-    stats = {"servers": 15000, "shards": 5, "users": 500000}
+    stats = {"servers": 729, "shards": 1, "users": 160895}
     await boticord.postStats(stats)
 
 
